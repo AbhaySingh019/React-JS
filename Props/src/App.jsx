@@ -5,17 +5,17 @@ const App = () => {
     {
       brandLogo: "https://pngimg.com/uploads/meta/meta_PNG12.png",
       companyName: "Meta",
-      datePosted: "5 days ago",
+      datePosted: "6 days ago",
       post: "Frontend Engineer",
       tag1: "Full Time",
       tag2: "Junior Level",
-      pay: "$65/hour",
+      pay: "$72/hour",
       location: "Menlo Park, USA"
     },
     {
       brandLogo: "https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg",
       companyName: "Amazon",
-      datePosted: "2 weeks ago",
+      datePosted: "3 weeks ago",
       post: "Backend Developer",
       tag1: "Full Time",
       tag2: "Mid Level",
@@ -65,11 +65,11 @@ const App = () => {
     {
       brandLogo: "https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-1967.jpg?width=672&height=454&name=ibm-logo-1967.jpg",
       companyName: "IBM",
-      datePosted: "2 days ago",
+      datePosted: "12 days ago",
       post: "AI Research Engineer",
       tag1: "Full Time",
       tag2: "Senior Level",
-      pay: "$95/hour",
+      pay: "$94/hour",
       location: "New York, USA"
     },
     {
@@ -79,7 +79,7 @@ const App = () => {
       post: "Software Engineer",
       tag1: "Full Time",
       tag2: "Mid Level",
-      pay: "$80/hour",
+      pay: "$85/hour",
       location: "Austin, USA"
     },
     {
@@ -89,7 +89,7 @@ const App = () => {
       post: "GPU Programmer",
       tag1: "Full Time",
       tag2: "Senior Level",
-      pay: "$120/hour",
+      pay: "$60/hour",
       location: "Santa Clara, USA"
     },
     {
