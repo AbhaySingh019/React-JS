@@ -2,6 +2,8 @@ React me key objects ko unique banane ke liye use hoti hai.
 
 TAILWINDCSS
 vite.config.js file me import tailwindcss from '@tailwindcss/vite' add karo.
+phit tailwindcss() function ko export krna hoga react ke saath
+plugins: [react(), tailwindcss()],
 
 Phir index.css me
 @import "tailwindcss";
