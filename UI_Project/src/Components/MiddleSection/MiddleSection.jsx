@@ -3,7 +3,7 @@ import MLeft from './MLeft'
 import MRight from './MRight'
 const MiddleSection = () => {
   return (
-    <div className='h-screen w-full'>
+    <div className='h-screen w-full bg-gray-50'>
       <MLeft />
       <MRight />
     </div>
