@@ -1,6 +1,7 @@
 import React from 'react'
 import TopSection from './Components/TopSection/TopSection'
 import MiddleSection from './Components/MiddleSection/MiddleSection'
+import Footer from './Components/BottomSection/Footer'
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <TopSection />
       <MiddleSection />
+      <Footer />
     </div>
   )
 }
