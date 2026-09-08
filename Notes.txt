@@ -1,4 +1,9 @@
-By Shreyians and Code step by step
-Youtube
+React me key objects ko unique banane ke liye use hoti hai.
 
--> kEYS are used to make objects unique in react.
+TAILWINDCSS
+vite.config.js file me import tailwindcss from '@tailwindcss/vite' add karo.
+
+Phir index.css me
+@import "tailwindcss";
+
+Ab Tailwind CSS tumhare project me use kar sakte ho.
