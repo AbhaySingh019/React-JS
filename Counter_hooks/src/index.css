@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  font-family: sans-serif; 
+}
+
+.heading{
+    font-style: italic;
+    padding: 20px  40px;
+    background-color: antiquewhite;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-bottom: auto;
+    max-width: fit-content;
+}
+.btn{
+    display: inline;
+     margin-top: 30px;
+    margin-left: 30px;
+    border: red;
+    font-size: medium;
+    background-color: brown;
+    height: 25px;
+    width: 150px;
+
+}
