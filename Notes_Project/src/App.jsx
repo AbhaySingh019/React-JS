@@ -1,36 +1,41 @@
 import React from 'react'
 
 const App = () => {
-  const SubmitHandler=(ele)=>{
+  const SubmitHandler = (ele) => {
     ele.preventDefault()
     console.log('Submit')
-
   }
+
   return (
-    <div className='h-screen bg-black text-white px-15 py-10'>
-      <form onSubmit={(ele)=>{
-        SubmitHandler(ele)
-      }} className='flex gap-5'>
-        <div className='w-1/2  flex items-start flex-col gap-3 '>
-          <input className='flex gap-2 px-5 items-center w-full py-2 border-2 rounded font-bold text-lg self-center text-center'
-            type='text' 
-            placeholder='ENTER HEADING'
-          />
-          <textarea
-            className='px-5 w-full py-2 border-2 rounded self-center  h-40'
-            type='text'
-            placeholder='Notes Body'
-          />
-          <button className='border w-1/3 rounded w-full px-5 py-2 outline-solid outline-red-500 bg-white text-black text-bold items-center self-center '>
-            ADD NOTE
-          </button>
-        </div>
-          <img className='absolute right-28'
-            src='https://play-lh.googleusercontent.com/XGlKNhHspmM1S1-Ea9isKSmdzMCwv-q2ALf9a-FXfRRo4IuxyVGX3HkhW6tpxAACRSIXHcdPRL0fSmZD-JSUkA=w240-h480-rw' 
-            alt='Notes Image' 
-          />
-        
+    <div className='h-screen bg-black text-white px-10 py-10 flex justify-between gap-10'>   
+      <form 
+        onSubmit={(ele) => SubmitHandler(ele)} 
+        className='w-1/2 flex flex-col items-start gap-4 h-full'
+      >
+        <input 
+          className='px-5 py-2 w-full border-2 rounded font-bold text-lg text-center bg-transparent text-white'
+          type='text' 
+          placeholder='ENTER HEADING'
+        />
+        <textarea
+          className='px-5 py-2 w-full border-2 rounded h-52 bg-transparent text-white resize-none'
+          placeholder='Notes Body'
+        />
+        <button className='border w-1/3 rounded px-5 py-2 outline-solid outline-red-500 bg-white text-black font-bold self-center cursor-pointer'>
+          ADD NOTE
+        </button>
       </form>
+
+      <div className='bg-gray-700 flex flex-col gap-5 p-10 border-2 w-1/2 h-full rounded-lg'>
+        <h1 className='text-xl font-bold'>YOUR NOTES</h1>
+        <div className='flex flex-row flex-wrap gap-5 items-start w-full overflow-y-auto py-3'>   
+          <div className='h-52 w-40 rounded-2xl bg-white shrink-0'></div>
+          <div className='h-52 w-40 rounded-2xl bg-white shrink-0'></div>
+          <div className='h-52 w-40 rounded-2xl bg-white shrink-0'></div>
+          <div className='h-52 w-40 rounded-2xl bg-white shrink-0'></div>
+        </div>
+      </div>
+
     </div>
   )
 }
