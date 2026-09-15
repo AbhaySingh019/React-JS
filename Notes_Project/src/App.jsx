@@ -7,8 +7,6 @@ const App = () => {
   const[details,setDetails]=useState('')
 
   const[task,setTask]=useState([])
-
-
   const SubmitHandler = (ele) => {
     ele.preventDefault()
     

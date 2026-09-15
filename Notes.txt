@@ -9,3 +9,8 @@ Phir index.css me
 @import "tailwindcss";
 
 Ab Tailwind CSS tumhare project me use kar sakte ho.
+
+
+API's
+lorem picsum (For Images)
+axios
