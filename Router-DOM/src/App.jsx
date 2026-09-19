@@ -11,12 +11,14 @@ import Women from './Pages/Women'
 import Kids from './Pages/Kids'
 import Courses from './Pages/Courses'
 import CoursesDetail from './Pages/CoursesDetail'
+import Navbar2 from './Components/Navbar2'
 
 const App = () => {
   return (
     <div className='min-h-screen w-full flex flex-col justify-between bg-black'>
-      <div className='px-3 py-2'>
+      <div className='flex-col px-3 py-2'>
         <Navbar />
+        <Navbar2 />
       </div>
       <Routes>
         <Route path='/' element={<Home />}/>
