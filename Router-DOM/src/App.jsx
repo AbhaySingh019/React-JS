@@ -6,6 +6,11 @@ import About from './Pages/About'
 import Product from './Pages/Product'
 import { Route, Routes } from 'react-router-dom'
 import Error from './Pages/ErrorPage'
+import Men from './Pages/Men'
+import Women from './Pages/Women'
+import Kids from './Pages/Kids'
+import Courses from './Pages/Courses'
+import CoursesDetail from './Pages/CoursesDetail'
 
 const App = () => {
   return (
@@ -16,7 +21,14 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />} />
-        <Route path='/products' element={<Product />} />
+
+        <Route path='/product' element={<Product />} >
+          <Route path='men' element={<Men />} />
+          <Route path='women' element={<Women />} />
+          <Route path='kids' element={<Kids />} />
+        </Route>
+        <Route path='/courses' element={<Courses />} />
+        <Route path='/courses/:courseId' element={<CoursesDetail />} /> 
         <Route path='*' element={<Error />} />
       </Routes>
       <div className='px-3 py-2'>
