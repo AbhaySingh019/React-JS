@@ -14,3 +14,61 @@ Ab Tailwind CSS tumhare project me use kar sakte ho.
 API's
 lorem picsum (For Images)
 axios (to fetch API)
+
+:
+
+📌 Context API Cheat Sheet
+
+1. Definition
+Context API is a React feature used to share data across the component tree globally without manually passing props at every level (prevents Prop Drilling).
+
+2. Core Building Blocks
+
+THREE CORE STEPS IN CONTEXT API
+
+Step 1: Create Context
+
+Use createContext() to initialize a global data store.
+
+Example:
+export const ThemeDataContext = createContext()
+
+Step 2: Provide Context
+
+Wrap the target components using Context.Provider.
+
+Pass state and updater functions inside the value prop.
+
+Use props.children to render nested child components.
+
+Example:
+<ThemeDataContext.Provider setTheme]} value="{[theme,">
+{props.children}
+</ThemeDataContext.Provider>
+
+Step 3: Consume Context
+
+Use the useContext() hook inside any child component to read or update the shared state directly.
+
+Example:
+const [theme, setTheme] = useContext(ThemeDataContext)
+
+DATA FLOW IN YOUR CODE STRUCTURE
+
+ThemeContext.jsx: Defines useState('Light') and exports ThemeDataContext.Provider.
+
+main.jsx / index.jsx: Wraps <App/> inside <ThemeContext> so all nested components get access.
+
+Navbar2.jsx: Consumes theme using useContext to render current theme name.
+
+Button.jsx: Consumes setTheme using useContext to change the theme value on click.
+
+App.jsx: Reads theme to dynamically apply .light-theme or .dark-theme CSS classes.
+
+KEY BENEFITS
+
+Prevents Prop Drilling: Intermediary components (like Navbar.jsx) don't need to pass unneeded props down.
+
+Centralized Global State: Ideal for theme toggling, user authentication, and shopping cart states.
+
+Automatic Re-renders: All components using useContext update automatically whenever the context state changes.
