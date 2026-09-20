@@ -4,7 +4,7 @@ import { createContext, useState } from 'react'
 
 const ThemeContext = (props) => {
 
-    const [theme,setTheme]=useState('light')
+    const [theme,setTheme]=useState('Light')
 
   return (
     <div>

@@ -2,34 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'helvetica neue';
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+/* Theme Classes */
+.app-container {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  padding: 20px;
 }
 
-
-.light {
-  background-color: lightseagreen;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 20px;
+.light-theme {
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
-.dark {
-  background-color: darkslategrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 20px;
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-
+/* Navbar Styling */
 .navbar2 {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.dark-theme .navbar2 {
+  border-bottom-color: #333;
+  background-color: #1e1e1e;
+}
+
+.light-theme .navbar2 {
+  background-color: #f4f4f4;
+}
+
+.navbar2 h4 {
+  cursor: pointer;
+}
+
+/* Button Styling */
+.btn-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.theme-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.light-theme .theme-btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-theme .theme-btn {
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
